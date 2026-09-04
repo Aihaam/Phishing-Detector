@@ -1,0 +1,153 @@
+[
+  {
+    "experiment": "1_random_stratified",
+    "n_train": 27944,
+    "n_test": 6986,
+    "precision": 0.9842,
+    "recall": 0.9725,
+    "f1": 0.9783,
+    "pr_auc": 0.9973,
+    "confusion": [
+      [
+        3736,
+        50
+      ],
+      [
+        88,
+        3112
+      ]
+    ],
+    "top_malicious_features": [
+      "your",
+      "account",
+      "https",
+      "de",
+      "bank",
+      "email",
+      "2023",
+      "click here",
+      "click",
+      "your account",
+      "dear",
+      "security",
+      "our",
+      "2025",
+      "2024",
+      "sie",
+      "unsubscribe",
+      "ebay",
+      "notification",
+      "para",
+      "payment",
+      "details",
+      "emails",
+      "this email",
+      "free"
+    ],
+    "top_legitimate_features": [
+      "enron",
+      "re",
+      "2001",
+      "2002",
+      "the",
+      "thanks",
+      "enron com",
+      "713",
+      "gas",
+      "image image",
+      "is",
+      "on",
+      "me",
+      "at",
+      "call",
+      "meeting",
+      "energy",
+      "01",
+      "original message",
+      "mark",
+      "jeff",
+      "houston",
+      "pm",
+      "that",
+      "fw"
+    ]
+  },
+  {
+    "experiment": "2_leave_one_corpus_out",
+    "n_train": 23182,
+    "n_test": 10069,
+    "precision": 0.9862,
+    "recall": 0.7919,
+    "f1": 0.8784,
+    "pr_auc": 0.9833,
+    "confusion": [
+      [
+        4238,
+        64
+      ],
+      [
+        1200,
+        4567
+      ]
+    ]
+  },
+  {
+    "experiment": "3_temporal_old_to_new",
+    "n_train": 18019,
+    "n_test": 15232,
+    "precision": 0.9903,
+    "recall": 0.8346,
+    "f1": 0.9058,
+    "pr_auc": 0.9914,
+    "confusion": [
+      [
+        9418,
+        47
+      ],
+      [
+        954,
+        4813
+      ]
+    ]
+  },
+  {
+    "experiment": "4_provenance_probe_malicious",
+    "n_train": 11456,
+    "n_test": 2865,
+    "precision": 0.9646,
+    "recall": 0.9708,
+    "f1": 0.9677,
+    "pr_auc": 0.9948,
+    "confusion": [
+      [
+        1093,
+        61
+      ],
+      [
+        50,
+        1661
+      ]
+    ],
+    "note": "predicting nazario vs phishing_pot; high score = leakage risk"
+  },
+  {
+    "experiment": "4_provenance_probe_legitimate",
+    "n_train": 15144,
+    "n_test": 3786,
+    "precision": 0.9772,
+    "recall": 0.9969,
+    "f1": 0.987,
+    "pr_auc": 0.9996,
+    "confusion": [
+      [
+        792,
+        68
+      ],
+      [
+        9,
+        2917
+      ]
+    ],
+    "note": "predicting enron vs spamassassin_ham; high score = leakage risk"
+  }
+]

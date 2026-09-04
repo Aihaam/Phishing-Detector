@@ -135,7 +135,7 @@ def load_nazario() -> list[dict]:
                     records.append(r)
                     good += 1
             except Exception:
-                continue          # skip this ONE message, keep going
+                continue
         print(f"  {f.name}: {good} messages parsed")
     return records
 

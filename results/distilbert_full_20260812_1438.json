@@ -1,0 +1,102 @@
+[
+  {
+    "experiment": "1_random_stratified",
+    "model": "distilbert",
+    "n_train": 27944,
+    "n_test": 6986,
+    "precision": 0.9894,
+    "recall": 0.99,
+    "f1": 0.9897,
+    "pr_auc": 0.9993,
+    "confusion": [
+      [
+        3752,
+        34
+      ],
+      [
+        32,
+        3168
+      ]
+    ]
+  },
+  {
+    "experiment": "2_leave_one_corpus_out",
+    "model": "distilbert",
+    "n_train": 23182,
+    "n_test": 10069,
+    "precision": 0.9276,
+    "recall": 0.8947,
+    "f1": 0.9109,
+    "pr_auc": 0.9769,
+    "confusion": [
+      [
+        3899,
+        403
+      ],
+      [
+        607,
+        5160
+      ]
+    ]
+  },
+  {
+    "experiment": "3_temporal_old_to_new",
+    "model": "distilbert",
+    "n_train": 18019,
+    "n_test": 15232,
+    "precision": 0.9911,
+    "recall": 0.9239,
+    "f1": 0.9563,
+    "pr_auc": 0.9967,
+    "confusion": [
+      [
+        9417,
+        48
+      ],
+      [
+        439,
+        5328
+      ]
+    ]
+  },
+  {
+    "experiment": "4_provenance_probe_malicious",
+    "model": "distilbert",
+    "n_train": 11456,
+    "n_test": 2865,
+    "precision": 0.9676,
+    "recall": 0.979,
+    "f1": 0.9733,
+    "pr_auc": 0.9961,
+    "confusion": [
+      [
+        1098,
+        56
+      ],
+      [
+        36,
+        1675
+      ]
+    ]
+  },
+  {
+    "experiment": "4_provenance_probe_legitimate",
+    "model": "distilbert",
+    "n_train": 15144,
+    "n_test": 3786,
+    "precision": 0.9952,
+    "recall": 0.9976,
+    "f1": 0.9964,
+    "pr_auc": 0.9998,
+    "confusion": [
+      [
+        846,
+        14
+      ],
+      [
+        7,
+        2919
+      ]
+    ]
+  }
+]
