@@ -1,10 +1,4 @@
-   pandas==3.0.3
-   pyarrow==25.0.0
-   numpy==2.5.1
-   scikit-learn==1.9.0
-   beautifulsoup4==4.15.0
-   joblib==1.5.3
-   tqdm==4.68.4
-   streamlit
-   transformers
-   torch
+streamlit
+scikit-learn==1.9.0
+joblib==1.5.3
+beautifulsoup4==4.15.0
